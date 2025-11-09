@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logo from "../assets/BeanScene.png";
 import coffeeTag from "../assets/Coffee.png";
-import CoffeeBackground from "../assets/cofee-Backround.png";
+import CoffeeVideo from "../assets/coffee-video.mp4"; 
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,11 +15,21 @@ const Header = () => {
   ];
 
   return (
-    <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${CoffeeBackground})` }}>
-      {/* 🖤 Overlay only on background */}
+    <div className="relative h-screen overflow-hidden">
+      {/* 🎥 Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src={CoffeeVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>
+
+      {/* 🖤 Dark Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* 🌟 Content above overlay */}
+      {/* 🌟 Content */}
       <div className="relative z-10">
         {/* Navbar */}
         <nav className="flex flex-row justify-around items-center p-5 text-white">
@@ -80,7 +90,11 @@ const Header = () => {
           <h1 className="text-white font-serif text-2xl">
             We’ve got your morning covered with
           </h1>
-          <img src={coffeeTag} alt="Coffee" className="mt-8 mx-auto md:mx-0 w-80" />
+          <img
+            src={coffeeTag}
+            alt="Coffee"
+            className="mt-8 mx-auto md:mx-0 w-80"
+          />
           <p className="text-white mt-10 font-serif text-xl md:text-2xl leading-relaxed">
             It is best to start your day with a cup of coffee. Discover the
             <br /> best flavours coffee you will ever have. We provide the best
