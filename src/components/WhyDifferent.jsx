@@ -7,18 +7,18 @@ import beanicon4 from "../assets/best-price1.png";
 
 const WhyDifferent = () => {
   return (
-    <div className="h-screen overflow-x-clip">
+    <div className="sm:h-[730px] h-[1700px] overflow-x-clip">
       <div>
-        <h1 className="font-bold text-5xl font-serif text-amber-800 text-center">
+        <h1 className="font-bold sm:text-5xl text-2xl sm:mt-0 mt-20 font-serif text-amber-800 text-center">
           Why are we different?
         </h1>
-        <p className="text-center text-gray-600 mt-5 font-serif text-xl md:text-2xl">
+        <p className="text-center text-gray-600 mt-5 font-serif text-xl sm:px-0 px-2 md:text-2xl">
           We don’t just make your coffee, we make your day!
         </p>
 
         <img src={blast1} className="relative left-280 bottom-60" />
-        <div className="flex flex-row pt-10 justify-center gap-8 relative bottom-60">
-          <div className="bg-amber-50 h-70 w-70 ">
+        <div className="flex sm:flex-row flex-col sm:p-0 p-17 pt-10 sm:justify-center items-center gap-8 relative bottom-60">
+          <div className="bg-amber-50 h-70 w-70 sm:mt-0 mt-5 ">
             <div className="flex justify-center mt-7">
             <img src={beanicon2}className="h-20 w-20" />
             </div>
@@ -63,7 +63,7 @@ const WhyDifferent = () => {
             </p>
           </div>
         </div>
-        <div className="  relative bottom-50">
+        <div className="  relative sm:bottom-50 bottom-70">
           <p className="text-center text-gray-600 mt-5 font-serif text-xl md:text-1xl">
             Great ideas start with great coffee, Lets help you achieve that
           </p>

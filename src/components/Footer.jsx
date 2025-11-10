@@ -10,15 +10,15 @@ import logo from "../assets/BeanScene.png";
 
 const Footer = () => {
   return (
-    
-    <div className="relative bg-yellow-950 bg-cover bg-center overflow-x-clip  text-white h-[500px]"
-     style={{ backgroundImage: `url(${footBean})` }}
+    <div
+      className="relative bg-yellow-950 bg-cover bg-center overflow-x-clip  text-white sm:h-[500px]"
+      style={{ backgroundImage: `url(${footBean})` }}
     >
-       <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
       {/* Decorative Beans */}
-    
+
       {/* Main Footer Content */}
-      <div className=" relative z-10 max-w-7xl pt-40 mx-20 px-8 py-16 flex flex-col md:flex-row justify-between gap-10">
+      <div className=" relative z-10 sm:max-w-7xl pt-30 sm:pt-40 mx-20 sm:px-8 sm:py-16 flex flex-col md:flex-row justify-between gap-10">
         {/* Logo & Description */}
         <div className="flex-1">
           <img src={logo} alt="Bean Scene" className="w-40" />
@@ -86,7 +86,6 @@ const Footer = () => {
       <div className="border-t relative z-10 border-yellow-800 mt-10 text-center py-4 text-gray-400 text-sm">
         © {new Date().getFullYear()} Bean Scene. All rights reserved.
       </div>
-      
     </div>
   );
 };

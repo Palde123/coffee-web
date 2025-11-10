@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-[750px] overflow-hidden">
       {/* 🎥 Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -68,7 +68,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="absolute top-20 left-0 w-full bg-black/80 text-white flex flex-col items-center gap-6 py-8 md:hidden">
+          <div className="absolute top-20 left-0 w-full bg-black/100 text-white flex flex-col items-center gap-6 py-8 md:hidden">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -86,7 +86,7 @@ const Header = () => {
         )}
 
         {/* Hero Section */}
-        <div className="p-10 md:p-20 mt-10 md:mt-20 text-center md:text-left">
+        <div className=" p-7 sm:p-10 md:p-20 mt-10 md:mt-20 text-center md:text-left">
           <h1 className="text-white font-serif text-2xl">
             We’ve got your morning covered with
           </h1>

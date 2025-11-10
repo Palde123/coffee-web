@@ -5,10 +5,10 @@ import Cup from "../assets/cup.png";
 const OrderNow = () => {
   return (
     <div
-      className="relative h-[550px] bg-cover bg-center flex flex-row overflow-x-clip"
+      className="relative sm:h-[550px] h-[1000px] bg-cover bg-center flex sm:flex-row flex-col overflow-x-clip"
       style={{ backgroundImage: `url(${CoffeeBack})` }}
     >
-      <div className=" mt-30 relative left-20">
+      <div className=" mt-30 relative sm:left-20 p-5 sm:p-0">
         <h1 className="text-white font-bold text-5xl font-serif">
           Get a chance to have an <br />
           Amazing morning
@@ -22,9 +22,9 @@ const OrderNow = () => {
       <div>
         <img
           src={CoffeeBean}
-          className="h-137 w-150 relative left-90 object-fill"
+          className="sm:h-137 h-110 sm:w-150 relative left-10 sm:left-90 object-fill"
         />
-        <img src={Cup} className="absolute bottom-16 h-110 left-260  " />
+        <img src={Cup} className="absolute bottom-16 sm:h-110 h-80 sm:left-260 left-20  " />
       </div>
     </div>
   );
